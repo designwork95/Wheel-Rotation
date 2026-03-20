@@ -65,7 +65,7 @@ window.addEventListener('scroll', () => {
   const scrollProgress = Math.max(0, Math.min(1, (viewportHeight - modelTop) / (viewportHeight + modelHeight)));
   
   // Rotate only 45 degrees max as scroll moves through the model-viewer
-  const rotation = scrollProgress * 45;
+  const rotation = scrollProgress * 90;
   
   // Apply rotation using cameraOrbit attribute (theta phi radius)
   modelViewer.setAttribute('camera-orbit', `-${rotation}deg 75deg 100%`);
